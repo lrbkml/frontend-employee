@@ -13,7 +13,7 @@ const Footer = () => {
                         alt="Laraib Kamal Avatar"
                         className="footer-avatar"
                     /> */}
-                    <strong>Laraib Kamal</strong>
+                    <strong>Laraib Kamal...</strong>
                 </Navbar.Brand>
                 <Nav className="ml-auto">
                     <Nav.Link href="https://laraibkml.netlify.app/" target="_blank" className="footer-link">
