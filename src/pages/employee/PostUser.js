@@ -26,7 +26,7 @@ const PostUser = () => {
         e.preventDefault();
         console.log(formData);
         try {
-            const response = await fetch(`http://localhost:8081/api/employee`, { // Added http://
+            const response = await fetch(`https://main-employee-production.up.railway.app/api/employee`,  { // Added http://
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData)

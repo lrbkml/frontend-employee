@@ -27,7 +27,7 @@ const UpdateUser =()=>
     useEffect(()=>{
         const fetchEmployee = async()=>{
             try{
-                const response = await fetch (`http://localhost:8081/api/employee/${id}`);
+                const response = await fetch (`https://main-employee-production.up.railway.app/api/employee/${id}`);
                 const data = await response.json();
                 setFormData(data);
             }
@@ -43,7 +43,7 @@ const UpdateUser =()=>
             e.preventDefault();
 
             try{
-                const response = await fetch (`http://localhost:8081/api/employee/${id}`,{
+                const response = await fetch (`https://main-employee-production.up.railway.app/api/employee/${id}`,{
                     method: "PATCH",
                     headers:{
                         "Content-Type": "application/json",

@@ -14,7 +14,7 @@ const Dashboard =()=>{
     useEffect(()=>{
         const fetchEmployees = async () =>{
             try{
-                const response = await fetch(`http://localhost:8081/api/employees`);
+                const response = await fetch(`${process.env.REACT_APP_API_URL}/api/employees`);
                 const data = await response.json();
 
                 SetEmployees(data);
@@ -28,7 +28,7 @@ const Dashboard =()=>{
 
     const handleDelete = async (employeeId) =>{
         try{
-            const response = await fetch(`http://localhost:8081/api/employee/${employeeId}`,{
+            const response = await fetch(`${process.env.REACT_APP_API_URL}/api/employee/${employeeId}`,{
                 method: "DELETE",
         });
 
